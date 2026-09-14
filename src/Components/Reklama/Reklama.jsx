@@ -33,17 +33,17 @@ const Reklama = () => {
                 <ul className='reklama-list2'>
                     <li className='reklama-item2'>
                         <img className='reklama-img2' src={icon1} alt="" />
-                        <h1 className='reklama-title2'></h1>
+                        <h1 className='reklama-title2'>99.9% Uptime</h1>
                         <p className='reklama-text2'></p>
                     </li>
                     <li className='reklama-item2'>
                         <img className='reklama-img2' src={icon2} alt="" />
-                        <h1 className='reklama-title2'></h1>
+                        <h1 className='reklama-title2'>Blazing Fast Web Hosting</h1>
                         <p className='reklama-text2'></p>
                     </li>
                     <li className='reklama-item2'>
                         <img className='reklama-img2' src={icon3} alt="" />
-                        <h1 className='reklama-title2'></h1>
+                        <h1 className='reklama-title2'>Free SSL Certificates</h1>
                         <p className='reklama-text2'></p>
                     </li>
                 </ul>
