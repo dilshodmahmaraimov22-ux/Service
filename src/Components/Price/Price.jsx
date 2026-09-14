@@ -29,7 +29,7 @@ const Price = () => {
                         <p className='price-text4'>Softaculous</p>
                     </li>
                     <li className='price-item'>
-                        <h1 className='price-title2'></h1>
+                        <h1 className='price-title2'>Standard</h1>
                         <p className='price-text2'>with all your customers via all conversation channels in one central dashboard.</p>
                         <h2 className='price-title3'>$4.20</h2>
                         <p className='price-text3'>Per month</p>
@@ -45,7 +45,7 @@ const Price = () => {
                         <p className='price-text4'>Softaculous</p>
                     </li>
                     <li className='price-item'>
-                        <h1 className='price-title2'></h1>
+                        <h1 className='price-title2'>Suprem</h1>
                         <p className='price-text2'>with all your customers via all conversation channels in one central dashboard.</p>
                         <h2 className='price-title3'>$7</h2>
                         <p className='price-text3'>Per month</p>
