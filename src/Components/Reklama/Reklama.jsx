@@ -27,6 +27,23 @@ const Reklama = () => {
                         <img src={rek6} alt="rasm" />
                     </li>
                 </ul>
+                <ul className='reklama-list2'>
+                    <li className='reklama-item2'>
+                        <img className='reklama-img2' src="" alt="" />
+                        <h1 className='reklama-title2'></h1>
+                        <p className='reklama-text2'></p>
+                    </li>
+                    <li className='reklama-item2'>
+                        <img className='reklama-img2' src="" alt="" />
+                        <h1 className='reklama-title2'></h1>
+                        <p className='reklama-text2'></p>
+                    </li>
+                    <li className='reklama-item2'>
+                        <img className='reklama-img2' src="" alt="" />
+                        <h1 className='reklama-title2'></h1>
+                        <p className='reklama-text2'></p>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
