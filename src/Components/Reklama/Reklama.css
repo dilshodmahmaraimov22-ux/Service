@@ -16,7 +16,6 @@
   gap: 60px;
 }
 
-/* Yuqori qism: Sarlavha va Logotiplar */
 .reklama-list {
   list-style: none;
   display: flex;
@@ -44,7 +43,6 @@
   line-height: 1.6;
 }
 
-/* Logotiplar grid paneli (3 ustun x 2 qator) */
 .reklama-item:last-child {
   flex: 1;
   display: grid;
@@ -68,7 +66,6 @@
   transform: translateY(-2px);
 }
 
-/* Pastki qism: 3 ta Feature kartochkasi */
 .reklama-list2 {
   list-style: none;
   display: flex;
@@ -111,7 +108,6 @@
   line-height: 1.6;
 }
 
-/* Mobil va planshet versiyalari (Responsive) */
 @media (max-width: 992px) {
   .reklama-list {
     flex-direction: column;
