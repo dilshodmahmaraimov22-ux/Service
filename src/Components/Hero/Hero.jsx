@@ -1,5 +1,6 @@
 import React from 'react'
 import './Hero.css'
+import girl from '../Images/Girl.png'
 
 const Hero = () => {
   return (
@@ -19,6 +20,11 @@ const Hero = () => {
                         <p className='hero-text'>Blazing fast web hosting for individuals and businesses of all sizes backed by 24x7x365 Support.</p>
                         <button className='hero-btn'>Create an Account</button>
                         <button className='hero-btn'>Choose your plan</button>
+                    </li>
+                </ul>
+                <ul className='hero-list'>
+                    <li className='hero-item3'>
+                        <img className='hero-img' src={girl} alt="" />
                     </li>
                 </ul>
             </div>
