@@ -1,0 +1,138 @@
+.reklama {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.reklama-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Yuqori qism: Sarlavha va Logotiplar */
+.reklama-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.reklama-item:first-child {
+  flex: 1;
+  max-width: 500px;
+}
+
+.reklama-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 16px;
+  line-height: 1.25;
+}
+
+.reklama-text {
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Logotiplar grid paneli (3 ustun x 2 qator) */
+.reklama-item:last-child {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: center;
+  justify-items: center;
+}
+
+.reklama-item:last-child img {
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.7;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.reklama-item:last-child img:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* Pastki qism: 3 ta Feature kartochkasi */
+.reklama-list2 {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.reklama-item2 {
+  flex: 1;
+  background-color: #f8fafc;
+  padding: 32px 24px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reklama-item2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+}
+
+.reklama-img2 {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.reklama-title2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.reklama-text2 {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Mobil va planshet versiyalari (Responsive) */
+@media (max-width: 992px) {
+  .reklama-list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .reklama-item:first-child {
+    max-width: 100%;
+  }
+
+  .reklama-list2 {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .reklama-item:last-child {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reklama-title {
+    font-size: 28px;
+  }
+}
