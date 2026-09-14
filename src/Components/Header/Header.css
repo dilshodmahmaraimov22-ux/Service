@@ -1,11 +1,68 @@
-*{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Asosiy sozlamalar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container{
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 1200px;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header qismi */
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 15px 0;
+}
+
+/* Ro'yxat elementlarini qatorma-qator joylashtirish */
+.header-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+/* Har bir guruh ichidagi elementlarni bir chiziqqa tekislash */
+.header-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Logo o'lchami */
+.header-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Linklar stili */
+.header-link {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header-link:hover {
+  color: #007bff;
+}
+
+/* Telefon raqami tugma korinishida */
+.header-item:last-child .header-link:last-child {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.header-item:last-child .header-link:last-child:hover {
+  background-color: #0056b3;
 }
