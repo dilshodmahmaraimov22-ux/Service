@@ -6,6 +6,9 @@ import rek3 from '../Images/Rek3.png'
 import rek4 from '../Images/Rek4.png'
 import rek5 from '../Images/Rek5.png'
 import rek6 from '../Images/Rek6.png'
+import icon1 from '../Images/Icon1.png'
+import icon2 from '../Images/Icon2.png'
+import icon3 from '../Images/Icon3.png'
 
 const Reklama = () => {
   return (
@@ -29,17 +32,17 @@ const Reklama = () => {
                 </ul>
                 <ul className='reklama-list2'>
                     <li className='reklama-item2'>
-                        <img className='reklama-img2' src="" alt="" />
+                        <img className='reklama-img2' src={icon1} alt="" />
                         <h1 className='reklama-title2'></h1>
                         <p className='reklama-text2'></p>
                     </li>
                     <li className='reklama-item2'>
-                        <img className='reklama-img2' src="" alt="" />
+                        <img className='reklama-img2' src={icon2} alt="" />
                         <h1 className='reklama-title2'></h1>
                         <p className='reklama-text2'></p>
                     </li>
                     <li className='reklama-item2'>
-                        <img className='reklama-img2' src="" alt="" />
+                        <img className='reklama-img2' src={icon3} alt="" />
                         <h1 className='reklama-title2'></h1>
                         <p className='reklama-text2'></p>
                     </li>
