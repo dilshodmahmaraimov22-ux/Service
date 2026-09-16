@@ -1,0 +1,94 @@
+.serve {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #f8fafc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 2 ta li (list-item) ni yonma-yon display: flex qilish */
+.serve-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+}
+
+/* Birinchi li (Chap tomondagi matnlar va sarlavha uchun) */
+.serve-item:first-child {
+  flex: 1;
+  max-width: 450px;
+}
+
+.serve-item:first-child h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 16px;
+  line-height: 1.25;
+}
+
+.serve-item:first-child p {
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Ikkinchi li (O'ng tomondagi rasmlar panjarasi) */
+.serve-item:last-child {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 ustunli kachestvo */
+  gap: 16px; /* Rasmlar orasidagi masofa */
+  align-items: center;
+  justify-items: center;
+}
+
+/* Rasmlarni kichiklashtirish va ixcham qilish */
+.serve-item:last-child img {
+  width: 100%;
+  max-width: 140px; /* Rasmlar maksimal kengligi kichiklashtirildi */
+  height: 90px;     /* Bir xil bo'y berildi */
+  object-fit: contain;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.serve-item:last-child img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-color: #cbd5e1;
+}
+
+/* Mobil va planshet versiyalari (Responsive) */
+@media (max-width: 992px) {
+  .serve-list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .serve-item:first-child {
+    max-width: 100%;
+  }
+
+  .serve-item:last-child img {
+    max-width: 120px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .serve-item:last-child {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

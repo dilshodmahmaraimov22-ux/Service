@@ -15,8 +15,8 @@ const Serve = () => {
             <div className='serve-container'>
                 <ul className='serve-list'>
                    <li className='serve-item'>
-                    <h1 className='serve'></h1>
-                    <p className='serve-item'></p>
+                    <h1 className='serve'>We serve over 100 Nigerian Websites</h1>
+                    <p className='serve-item'>Connect LemonWares with your favourite tools that you use daily and keep things on track.</p>
                    </li>
                    <li className='serve-item'>
                     <img src={s1} alt="" />
