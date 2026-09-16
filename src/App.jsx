@@ -6,6 +6,7 @@ import Price from './Components/Price/Price'
 import Story from './Components/Story/Story'
 import Serve from './Components/Serve/Serve'
 import Banner from './Components/Banner/Banner'
+import Footer from './Components/Footer/Footer'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
     <Story/>
     <Serve/>
     <Banner/>
+    <Footer/>
     </>
   )
 }
