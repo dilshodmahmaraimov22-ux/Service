@@ -1,0 +1,111 @@
+.story {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.story-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Yuqori sarlavha va ostki matn */
+.story-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #0f172a;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.story-text {
+  font-size: 18px;
+  color: #64748b;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Fikrlar kartochkalari ro'yxati */
+.story-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+
+/* Har bir mihoz fikri kartochkasi */
+.story-item {
+  flex: 1;
+  max-width: 360px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 36px 28px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-color: #cbd5e1;
+}
+
+/* Rasm (Avatar yoki Kompaniya logotipi) */
+.story-img {
+  width: 120px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 24px;
+}
+
+/* Izoh matni */
+.story-text2 {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  flex-grow: 1; /* Kartochkalar bo'yini bir xil tekislash uchun */
+}
+
+/* Mijoz ismi va lavozimi */
+.story-title2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.story-text3 {
+  font-size: 14px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+/* Mobil va planshet versiyalari (Responsive) */
+@media (max-width: 992px) {
+  .story-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .story-item {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .story-title {
+    font-size: 30px;
+  }
+}
