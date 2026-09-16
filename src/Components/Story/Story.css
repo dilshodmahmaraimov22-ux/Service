@@ -16,7 +16,6 @@
   align-items: center;
 }
 
-/* Yuqori sarlavha va ostki matn */
 .story-title {
   font-size: 38px;
   font-weight: 700;
@@ -32,7 +31,6 @@
   margin-bottom: 50px;
 }
 
-/* Fikrlar kartochkalari ro'yxati */
 .story-list {
   list-style: none;
   display: flex;
@@ -41,7 +39,6 @@
   width: 100%;
 }
 
-/* Har bir mihoz fikri kartochkasi */
 .story-item {
   flex: 1;
   max-width: 360px;
@@ -62,7 +59,6 @@
   border-color: #cbd5e1;
 }
 
-/* Rasm (Avatar yoki Kompaniya logotipi) */
 .story-img {
   width: 120px;
   height: 60px;
@@ -70,16 +66,14 @@
   margin-bottom: 24px;
 }
 
-/* Izoh matni */
 .story-text2 {
   font-size: 15px;
   color: #475569;
   line-height: 1.6;
   margin-bottom: 24px;
-  flex-grow: 1; /* Kartochkalar bo'yini bir xil tekislash uchun */
+  flex-grow: 1;
 }
 
-/* Mijoz ismi va lavozimi */
 .story-title2 {
   font-size: 18px;
   font-weight: 700;
@@ -93,7 +87,6 @@
   font-weight: 500;
 }
 
-/* Mobil va planshet versiyalari (Responsive) */
 @media (max-width: 992px) {
   .story-list {
     flex-direction: column;
