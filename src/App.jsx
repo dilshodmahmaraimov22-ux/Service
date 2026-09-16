@@ -5,6 +5,7 @@ import Reklama from './Components/Reklama/Reklama'
 import Price from './Components/Price/Price'
 import Story from './Components/Story/Story'
 import Serve from './Components/Serve/Serve'
+import Banner from './Components/Banner/Banner'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
     <Price/>
     <Story/>
     <Serve/>
+    <Banner/>
     </>
   )
 }

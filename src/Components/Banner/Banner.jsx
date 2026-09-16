@@ -6,7 +6,6 @@ const Banner = () => {
     <div className='banner'>
       <div className='container'>
         <div className='banner-card'>
-          {/* Uchburchak bezaklar */}
           <span className='shape shape-top'></span>
           <span className='shape shape-left'></span>
           <span className='shape shape-right'></span>
