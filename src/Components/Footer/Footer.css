@@ -1,7 +1,6 @@
-/* Footer asosiy bloki */
 .footer {
   width: 100%;
-  background-color: #b91c1c; /* Qizil orqa fon */
+  background-color: #b91c1c;
   color: #ffffff;
   padding: 60px 0 30px 0;
 }
@@ -18,7 +17,6 @@
   gap: 40px;
 }
 
-/* Asosiy linklar va logo ustunlari */
 .footer-list {
   list-style: none;
   display: flex;
@@ -28,7 +26,6 @@
   flex-wrap: wrap;
 }
 
-/* Birinchi ustun (Logo va tavsif matni) */
 .footer-item {
   display: flex;
   flex-direction: column;
@@ -41,7 +38,6 @@
   max-width: 320px;
 }
 
-/* Logo va matn */
 .footer-img {
   max-width: 140px;
   height: auto;
@@ -52,19 +48,17 @@
 .footer-text {
   font-size: 14px;
   line-height: 1.6;
-  color: #fecaca; /* Yengil och qizil-oqish matn */
+  color: #fecaca;
 }
 
-/* Ustun sarlavhalari (Birinchi linklar sarlavha vazifasini bajaradi) */
 .footer-item .footer-link:first-child {
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 6px;
-  pointer-events: none; /* Sarlavha bosilmasligi uchun */
+  pointer-events: none;
 }
 
-/* Oddiy linklar */
 .footer-link {
   text-decoration: none;
   color: #fca5a5;
@@ -77,7 +71,6 @@
   transform: translateX(3px);
 }
 
-/* Pastki mualliflik huquqi (Copyright) qismi */
 .footer-list2 {
   list-style: none;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -94,7 +87,6 @@
   color: #fecaca;
 }
 
-/* Mobil va planshet versiyasi (Responsive) */
 @media (max-width: 992px) {
   .footer-list {
     display: grid;
