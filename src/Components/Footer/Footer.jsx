@@ -1,5 +1,6 @@
 import React from 'react'
 import lemon from '../Images/Lemon.png'
+import './footer.css'
 
 const Footer = () => {
   return (
@@ -40,7 +41,7 @@ const Footer = () => {
                 </ul>
                 <ul className='footer-list2'>
                     <li className='fotter-item2'>
-                        
+                        <h2 className='footer-title2'>Built by Jeremiah with love in Lagos. Copyright 2021</h2>
                     </li>
                 </ul>
             </div>

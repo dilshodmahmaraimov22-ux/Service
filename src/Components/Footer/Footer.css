@@ -1,0 +1,119 @@
+/* Footer asosiy bloki */
+.footer {
+  width: 100%;
+  background-color: #b91c1c; /* Qizil orqa fon */
+  color: #ffffff;
+  padding: 60px 0 30px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Asosiy linklar va logo ustunlari */
+.footer-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Birinchi ustun (Logo va tavsif matni) */
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  min-width: 160px;
+}
+
+.footer-item:first-child {
+  max-width: 320px;
+}
+
+/* Logo va matn */
+.footer-img {
+  max-width: 140px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #fecaca; /* Yengil och qizil-oqish matn */
+}
+
+/* Ustun sarlavhalari (Birinchi linklar sarlavha vazifasini bajaradi) */
+.footer-item .footer-link:first-child {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 6px;
+  pointer-events: none; /* Sarlavha bosilmasligi uchun */
+}
+
+/* Oddiy linklar */
+.footer-link {
+  text-decoration: none;
+  color: #fca5a5;
+  font-size: 14px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+  transform: translateX(3px);
+}
+
+/* Pastki mualliflik huquqi (Copyright) qismi */
+.footer-list2 {
+  list-style: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 24px;
+}
+
+.fotter-item2 {
+  text-align: center;
+}
+
+.footer-title2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fecaca;
+}
+
+/* Mobil va planshet versiyasi (Responsive) */
+@media (max-width: 992px) {
+  .footer-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .footer-item:first-child {
+    grid-column: span 2;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-list {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-item:first-child {
+    grid-column: span 1;
+  }
+}
